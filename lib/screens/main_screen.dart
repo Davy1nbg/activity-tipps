@@ -12,10 +12,33 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   String? selectedWeather;
   String? selectedMood;
-  final List<String> weatherOptions = ["Sonnig", "Regnerisch", "Bewölkt"];
+  final List<String> weatherOptions = [
+    "Sonnig",
+    "Leicht bewölkt",
+    "Überwiegend bewölkt",
+    "Bedeckt",
+    "Nebel",
+    "Leichter Regen",
+    "Mäßiger Regen",
+    "Starker Regen",
+    "Gewitter",
+    "Schnee",
+    "Schneeregen",
+    "Hagel",
+    "Windig",
+    "Sturm"
+  ];
   // Beachten Sie, dass nicht jede Wetterbedingung jede Stimmung in Ihren Daten hat.
   // z.B. "Sonnig" hat keine "Traurig"-Aktivitäten in den Beispieldaten.
-  final List<String> moodOptions = ["Fröhlich", "Traurig", "Neutral"];
+    final List<String> moodOptions = [
+    "Fröhlich",
+    "Traurig",
+    "Neutral",
+    "Gelangweilt",
+    "Gestresst",
+    "Motiviert",
+    "Entspannt"
+  ];
   String? suggestedActivity;
 
   @override
